@@ -2,6 +2,8 @@
     <header>
         <div>
             ratio
+            <div class="sep"/>
+            ratial
         </div>
     </header>
 </template>
@@ -29,6 +31,10 @@ div {
     color: aqua;
     display: flex;
     justify-content: center;
+}
+
+.sep {
+    flex-grow: 1;
 }
 
 </style>
