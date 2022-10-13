@@ -1,19 +1,21 @@
 <template>
     <header>
         <div>
-            ratio
+            <base-button>ratio</base-button>
             <div class="sep"/>
-            ratial
+            <base-button>ratiette</base-button>
         </div>
     </header>
 </template>
 
 <script>
 
+import BaseButton from './BaseButton.vue'
+
 export default {
   name: 'BaseHeader',
   components: {
-
+    BaseButton
   }
 }
 
