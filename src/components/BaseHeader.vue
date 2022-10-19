@@ -3,7 +3,7 @@
         <div>
             <base-button>ratio</base-button>
             <div class="sep"/>
-            <base-button>ratiette</base-button>
+            <signin-button>Login</signin-button>
         </div>
     </header>
 </template>
@@ -11,11 +11,13 @@
 <script>
 
 import BaseButton from './BaseButton.vue'
+import SigninButton from './SigninButton.vue'
 
 export default {
   name: 'BaseHeader',
   components: {
-    BaseButton
+    BaseButton,
+    SigninButton
   }
 }
 
