@@ -1,19 +1,21 @@
 <template>
-  <base-layout>
-    <home-page />
-  </base-layout>
+  <router-link to="/"> accueil </router-link>  
+  <router-link to="/conv" v-if="this.$store.state.user!= null"> | Conversation </router-link>
+
+    <base-layout>
+      <router-view />
+    </base-layout>
+
 </template>
 
 <script>
 
 import BaseLayout from './components/BaseLayout.vue'
-import HomePage from './pages/PageMaison.vue'
 
 export default {
   name: 'App',
   components: {
     BaseLayout,
-    HomePage
   }
 }
 
