@@ -4,7 +4,7 @@
       @click="GetUser"
     >
     <p v-if ="user ===''">sign in</p>
-    <p v-else>Logged as {{user}}</p>
+    <p v-else>Logged as UwU {{user}}</p>
     </button>
 </template>
 
@@ -20,6 +20,7 @@ export default {
             })
             promise.then(user =>{
                  this.user = user.name;
+                 this.$store.commit('setUser', user.name)
             }).catch(err => console.log(err))
 
         }

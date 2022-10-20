@@ -1,10 +1,11 @@
 <template>
     <header>
-        <div>
+        <div >
             <base-button>ratio</base-button>
             <div class="sep"/>
             <signin-button>Login</signin-button>
         </div>
+        <h4>{{result}}</h4>
     </header>
 </template>
 
@@ -18,6 +19,12 @@ export default {
   components: {
     BaseButton,
     SigninButton
+  },
+  data: () => ({
+    result: ''  
+  }),
+  methods: {
+
   }
 }
 

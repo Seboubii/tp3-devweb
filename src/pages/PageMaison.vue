@@ -1,7 +1,7 @@
 <template>
     <!--<img id="amogus" alt="Vue logo" src="D:\EFREI\M1\S7\Web Dev\tp3\src\assets\amogus.png">-->
     <div>
-        <p>Here comes the content of the HomePage.</p> 
+        <p>Here comes the content of the HomePage. Welcome {{user}}</p> 
         <br>
         <button class="button"> ratio </button>
         <button disabled class="button">aaaa</button>
@@ -13,6 +13,16 @@
   
   export default {
     name: 'HomePage',
+    data: () => ({
+      result:''
+    }),
+    methods: {
+    },
+    computed:{
+      user(){
+        return this.$store.getters.getUser;
+      }
+    }
   }
   </script>
 

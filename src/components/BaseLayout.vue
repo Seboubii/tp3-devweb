@@ -2,7 +2,7 @@
 <template>
 
   <div>
-    <base-header />
+    <base-header @displayUser = "fetchData($events)" />
     <slot />
     <base-footer />
   </div>
@@ -19,6 +19,15 @@ export default {
   components: {
     BaseHeader,
     BaseFooter
+  },
+  data: () => ({
+    result:''
+  }),
+  methods: {
+    fetchData(data){
+      this.result = data
+      console.log("ratio")
+    }
   }
 }
 
